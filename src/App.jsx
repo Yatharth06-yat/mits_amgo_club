@@ -7,6 +7,7 @@ import './styles/design-system.css';
 import LoginPage       from './pages/Login/LoginPage';
 import AdminLayout     from './pages/Admin/AdminLayout';
 import AdminOverview   from './pages/Admin/AdminOverview';
+import AdminCCTV       from './pages/Admin/AdminCCTV';
 import AdminGame       from './pages/Admin/AdminGame';
 import AdminTeams      from './pages/Admin/AdminTeams';
 import AdminTasks      from './pages/Admin/AdminTasks';
@@ -44,6 +45,7 @@ function AppRoutes() {
 
       <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><AdminLayout /></ProtectedRoute>}>
         <Route index element={<AdminOverview />} />
+        <Route path="cctv"        element={<AdminCCTV />} />
         <Route path="game"        element={<AdminGame />} />
         <Route path="teams"       element={<AdminTeams />} />
         <Route path="tasks"       element={<AdminTasks />} />

@@ -8,6 +8,7 @@ import { useGame } from '../../context/GameContext';
 import NotificationToast from '../../components/NotificationToast';
 import KillAlert from '../../components/KillAlert';
 import MeetingModal from '../../components/MeetingModal';
+import TeamWebcamStreamer from '../../components/TeamWebcamStreamer';
 
 const NAV = [
   { to: '/team', label: 'Home', icon: Home, exact: true },
@@ -66,6 +67,7 @@ export default function TeamLayout() {
       <NotificationToast notifications={notifications} />
       {killAlert && <KillAlert data={killAlert} />}
       {activeMeeting && <MeetingModal meeting={activeMeeting} role="team" />}
+      <TeamWebcamStreamer />
     </div>
   );
 }

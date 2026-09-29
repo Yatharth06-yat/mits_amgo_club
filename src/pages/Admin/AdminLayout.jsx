@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Gamepad2, Users, ListTodo, CheckSquare, Skull, MessageSquare, Activity, Settings, LogOut, Zap, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, Gamepad2, Users, ListTodo, CheckSquare, Skull, MessageSquare, Activity, Settings, LogOut, Zap, ChevronRight, Video } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useGame } from '../../context/GameContext';
 import NotificationToast from '../../components/NotificationToast';
@@ -7,6 +7,7 @@ import styles from './AdminLayout.module.css';
 
 const NAV = [
   { to: '/admin',             label: 'Overview',     icon: LayoutDashboard, exact: true },
+  { to: '/admin/cctv',        label: 'Live CCTV',    icon: Video },
   { to: '/admin/game',        label: 'Game Control', icon: Gamepad2 },
   { to: '/admin/teams',       label: 'Teams',        icon: Users },
   { to: '/admin/tasks',       label: 'Tasks',        icon: ListTodo },

@@ -80,6 +80,7 @@ export default function AdminOverview() {
       {/* Quick links */}
       <div className={styles.quickGrid}>
         {[
+          { label: 'Live CCTV Cams',   count: 'WATCH', color: '#22c55e', href: '/admin/cctv' },
           { label: 'Pending Kills',    count: overview?.pendingKills,  color: 'var(--imposter-primary)', href: '/admin/kills' },
           { label: 'Verify Queue',     count: overview?.pendingVerif,  color: 'var(--warning-primary)',  href: '/admin/submissions' },
           { label: 'Active Meeting',   count: overview?.activeMeeting ? 1 : 0, color: 'var(--info-primary)', href: '/admin/meetings' },
