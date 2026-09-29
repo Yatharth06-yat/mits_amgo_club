@@ -1,0 +1,8 @@
+@import './styles/design-system.css';
+
+/* Remove default Vite styles */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
